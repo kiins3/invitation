@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư Mời Hợp Tác Chiến Lược: Dự Án Vibe Check 01</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Lora', serif;
+            background-color: #fffafb;
+            color: #4a4a4a;
+        }
+
+        .pink-salmon {
+            color: #FF91A4;
+        }
+
+        .bg-pink-salmon {
+            background-color: #FF91A4;
+        }
+
+        .border-pink-salmon {
+            border-color: #FF91A4;
+        }
+
+        .font-title {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .timeline-line {
+            width: 2px;
+            background: linear-gradient(to bottom, #FF91A4 0%, #ffe4e8 100%);
+        }
+
+        .fade-in {
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="p-6 md:p-12">
+
+    <div class="max-w-2xl mx-auto bg-white p-8 md:p-12 rounded-3xl shadow-xl border border-pink-100 fade-in">
+        <header class="text-center mb-12">
+            <span class="text-xs tracking-[0.3em] uppercase pink-salmon font-bold">Confidential Invitation</span>
+            <h1 class="font-title text-3xl md:text-4xl mt-4 mb-2">THƯ MỜI THAM GIA DỰ ÁN:<br><span
+                    class="pink-salmon italic">"VIBE CHECK 01"</span></h1>
+
+            <p class="font-bold text-gray-700 mt-4 mb-2 text-lg">📅 Thứ Bảy, 18/04/2026</p>
+            <p class="text-gray-400 italic text-sm">Target: Hiin | Developer: Kiin</p>
+        </header>
+
+        <div class="flex items-center justify-center space-x-4 mb-10 p-4 bg-pink-50 rounded-2xl">
+            <div class="text-left">
+                <p class="text-xs pink-salmon font-bold">Background Track:</p>
+                <p class="text-sm italic">If We Have Each Other</p>
+            </div>
+            <button id="playBtn"
+                class="bg-pink-salmon text-white p-3 rounded-full shadow-lg hover:scale-110 transition-transform">
+                ▶
+            </button>
+            <audio id="bgMusic" loop>
+                <source src="./If We Have Each Other.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <section class="relative">
+            <div class="absolute left-4 top-0 bottom-0 timeline-line"></div>
+
+            <div class="space-y-10">
+                <div class="relative pl-12">
+                    <div
+                        class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-pink-salmon shadow-[0_0_10px_#FF91A4]">
+                    </div>
+                    <h3 class="font-bold text-lg">19:30 | Triển khai hệ thống</h3>
+                    <p class="text-gray-500 text-sm">"Tài xế" xuất phát từ Cầu Giấy, băng qua dòng người Hà Nội.</p>
+                </div>
+
+                <div class="relative pl-12">
+                    <div class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-pink-salmon"></div>
+                    <h3 class="font-bold text-lg">20:10 | Có mặt tại tọa độ</h3>
+                    <p class="text-gray-500 text-sm">Check-in tại Chiến Thắng - Tân Triều. Đợi đối tác.</p>
+                </div>
+
+                <div class="relative pl-12">
+                    <div class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-pink-salmon"></div>
+                    <h3 class="font-bold text-lg">20:45 | Cinema Mode</h3>
+                    <p class="text-gray-500 text-sm">Lấy vé, bắp nước và tận hưởng bộ phim trên màn ảnh rộng.</p>
+                </div>
+
+                <div class="relative pl-12">
+                    <div class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-pink-salmon"></div>
+                    <h3 class="font-bold text-lg">23:00 | Chuyển cảnh: Night Out</h3>
+                    <p class="text-gray-500 text-sm">Di chuyển ra Công viên Phùng Khoang / Vườn hoa Hà Đông. Tận hưởng
+                        gió trời.</p>
+                </div>
+
+                <div class="relative pl-12">
+                    <div
+                        class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-pink-salmon shadow-[0_0_10px_#FF91A4]">
+                    </div>
+                    <h3 class="font-bold text-lg">23:20 | Deep Talk Session</h3>
+                    <p class="text-gray-500 text-sm">Đây là lúc những câu chuyện thực sự bắt đầu. Thời gian kết thúc:
+                        Tùy duyên.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="mt-16 text-center">
+            <p class="text-sm italic mb-6">Dresscode gợi ý: Trắng & Hồng Cá Hồi</p>
+
+            <div class="flex flex-col items-center justify-center min-h-[60px]">
+                <button id="confirmBtn"
+                    class="bg-pink-salmon text-white px-8 py-3 rounded-full font-bold shadow-lg hover:opacity-90 transition-opacity">
+                    CHỐT LỊCH!
+                </button>
+
+                <div id="thankYouMsg" class="hidden text-pink-salmon font-bold text-xl fade-in">
+                    Đã xác nhận! Hẹn cô ấy vào thứ 7 này nhớ!
+                </div>
+            </div>
+
+            <p class="mt-12 text-[10px] text-gray-300 uppercase tracking-widest">Built with care by a Human and an AI
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // Xử lý nút Play Nhạc
+        const playBtn = document.getElementById('playBtn');
+        const audio = document.getElementById('bgMusic');
+        let isPlaying = false;
+
+        playBtn.addEventListener('click', () => {
+            if (isPlaying) {
+                audio.pause();
+                playBtn.innerHTML = '▶';
+            } else {
+                audio.play();
+                playBtn.innerHTML = '⏸';
+            }
+            isPlaying = !isPlaying;
+        });
+
+        // Xử lý nút Chốt Lịch
+        const confirmBtn = document.getElementById('confirmBtn');
+        const thankYouMsg = document.getElementById('thankYouMsg');
+
+        confirmBtn.addEventListener('click', () => {
+            // Ẩn nút đi
+            confirmBtn.style.display = 'none';
+            // Hiển thị lời cảm ơn với hiệu ứng fade-in
+            thankYouMsg.classList.remove('hidden');
+        });
+    </script>
+</body>
+
+</html>
